@@ -1,0 +1,57 @@
+{
+  "componentQuantities": {
+    "discussion_assignment": 7,
+    "learning_journal": 8,
+    "written_assignment": 4,
+    "graded_quiz": 2,
+    "final_exam": 1
+  },
+  "componentWeights": {
+    "discussion_assignment": 15,
+    "written_assignment": 20,
+    "learning_journal": 15,
+    "graded_quiz": 25,
+    "final_exam": 25
+  },
+  "weeks": [
+    {
+      "discussion_assignment": 87,
+      "learning_journal": 100
+    },
+    {
+      "discussion_assignment": 90,
+      "written_assignment": 68,
+      "learning_journal": 100
+    },
+    {
+      "discussion_assignment": 90,
+      "written_assignment": null,
+      "graded_quiz": null
+    },
+    {
+      "discussion_assignment": null,
+      "written_assignment": null,
+      "learning_journal": null
+    },
+    {
+      "discussion_assignment": null,
+      "learning_journal": null
+    },
+    {
+      "discussion_assignment": null,
+      "learning_journal": null,
+      "graded_quiz": null
+    },
+    {
+      "written_assignment": null,
+      "learning_journal": null
+    },
+    {
+      "discussion_assignment": null,
+      "learning_journal": null
+    },
+    {
+      "final_exam": null
+    }
+  ]
+}
