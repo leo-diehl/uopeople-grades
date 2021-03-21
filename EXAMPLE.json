@@ -1,11 +1,4 @@
 {
-  "componentQuantities": {
-    "discussion_assignment": 7,
-    "learning_journal": 8,
-    "written_assignment": 4,
-    "graded_quiz": 2,
-    "final_exam": 1
-  },
   "componentWeights": {
     "discussion_assignment": 15,
     "written_assignment": 20,

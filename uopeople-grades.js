@@ -10,7 +10,6 @@ const fs = require('fs');
 const courseData = JSON.parse(fs.readFileSync(courseDataPath, 'utf8'));
 
 if (!courseData
-  || !courseData.componentQuantities
   || !courseData.componentWeights
   || !courseData.weeks
 ) {
@@ -18,11 +17,24 @@ if (!courseData
   process.exit()
 }
 
+const components = [
+  'discussion_forum',
+  'written_assignment',
+  'learning_journal',
+  'graded_quiz',
+  'final_exam',
+]
+const getComponentQuantities = (weeks) => weeks.reduce((result, week) => {
+  Object.keys(week).forEach((component) => result[component] = (result[component] || 0) + 1)
+  return result
+}, {})
+
 const {
-  componentQuantities,
   componentWeights,
   weeks,
 } = courseData
+
+const componentQuantities = getComponentQuantities(weeks)
 
 const requiredGradeToPass = 73
 
